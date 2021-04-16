@@ -34,13 +34,13 @@ export class Age {
         if (lifeForce > 0) {
           return (lifeForce / .64);
         } else {
-          return "You're still younger than the average, lil baby!"
+          return (lifeForce / .64) * -1;
         }
       case 'jupiter':
         if (lifeForce > 0) {
           return (lifeForce / 11.86);
         } else {
-          return "You're still younger than the average, grow up already!"
+          return (lifeForce / 11.86) * -1;
         }
       default: 'Sorry, we didnt get that. Please make sure ${planets} has been spelled correctly using lowercase lettering.'
     }

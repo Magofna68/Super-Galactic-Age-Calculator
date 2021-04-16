@@ -83,4 +83,12 @@ describe('Age', () => {
   test('should refactor the switch statement to include "life remaining" in mercury years', () => {
     expect(myAge.yearsConversion('mercury')).toEqual(83.33333333333334);
   })
+
+  test('should refactor the switch statement to include "life remaining" in venus years', () => {
+    expect(myAge.yearsConversion('venus')).toEqual(31.25);
+  })
+
+  test('should refactor the switch statement to include "life remaining" in jupiter years', () => {
+    expect(myAge.yearsConversion('jupiter')).toEqual(1.6863406408094437);
+  })
 })
