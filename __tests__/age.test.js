@@ -49,4 +49,8 @@ describe('Age', () => {
   test('should convert estimated RoL into venus years', () => {
     expect(myAge.remainderVenus).toEqual(37.2);
   })
+
+  test('should convert estimated RoL into jupiter years', () => {
+    expect(myAge.remainderJupiter).toEqual();
+  })
 })
