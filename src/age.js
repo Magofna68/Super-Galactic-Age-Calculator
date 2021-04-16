@@ -4,6 +4,7 @@ export class Age {
     this.life = life;
     this.mars = 1.88 * this.age;
     this.mercury = .24 * this.age;
+    this.venus = .62 * this.age;
   }
 
   // marsLife() {

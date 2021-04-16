@@ -29,4 +29,8 @@ describe('Age', () => {
   test('Should convert earth years into mercury years', () => {
     expect(myAge.mercury).toEqual(2.4);
   })
+
+  test('should convert earth years into venus years', () => {
+    expect(myAge.venus).toEqual();
+  })
 })
