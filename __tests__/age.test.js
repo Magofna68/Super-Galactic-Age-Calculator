@@ -37,4 +37,8 @@ describe('Age', () => {
   test('should convert earth years into jupiter years', () => {
     expect(myAge.jupiter).toEqual(118.6);
   })
+
+  test('should convert estimated remainder of life (RoL) into Marsian years', () => {
+    expect(myAge.remainderMars).toEqual();
+  })
 })
