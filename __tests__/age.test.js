@@ -39,6 +39,6 @@ describe('Age', () => {
   })
 
   test('should convert estimated remainder of life (RoL) into Marsian years', () => {
-    expect(myAge.remainderMars).toEqual();
+    expect(myAge.remainderMars).toEqual(112.8);
   })
 })
