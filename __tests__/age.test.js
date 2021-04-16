@@ -43,6 +43,6 @@ describe('Age', () => {
   })
 
   test('should convert estimated RoL into mercury years', () => {
-    expect(myAge.remainderMercury).toEqual();
+    expect(myAge.remainderMercury).toEqual(14.399999999999999);
   })
 })
