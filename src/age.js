@@ -1,9 +1,9 @@
 export class Age {
-  constructor(age, mars, life) {
+  constructor(age, life, mars, mercury) {
     this.age = age;
+    this.life = life;
     this.mars = 1.88 * this.age;
     this.mercury = .24 * this.age;
-    this.life = life;
   }
 
   // marsLife() {

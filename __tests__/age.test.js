@@ -3,7 +3,7 @@ import { Age } from '../src/age.js'
 describe('Age', () => {
   let myAge;
   beforeEach(() => {
-    myAge = new Age(10, 1.88, 70)
+    myAge = new Age(10, 70)
   })
 
   test('Should properly create an object with Age constructor', () => {
@@ -27,6 +27,6 @@ describe('Age', () => {
   })
 
   test('Should convert earth years into mercury years', () => {
-    expect(myAge.mercury).toEqual();
+    expect(myAge.mercury).toEqual(2.4);
   })
 })
