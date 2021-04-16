@@ -1,5 +1,5 @@
 export class Age {
-  constructor(age, avgLife, mars, mercury) {
+  constructor(age, avgLife) {
     this.age = age;
     this.avgLife = avgLife;
     this.mars = 1.88 * this.age;
@@ -11,39 +11,34 @@ export class Age {
     this.remainderVenus = (this.avgLife - this.age) / .62;
     this.remainderJupiter = (this.avgLife - this.age) / 11.86;
   }
-
-  // beatenTheOdds() {
-  //   if (this.avgLife >= this.age) {
-  //     return "You have life in you still!"
-  //   } else {
-  //     let yearsOver = this.age - this.avgLife;
-
-  //   return yearsOver;
+  // yearsMars(planets) {
+  //   let lifeForce = this.age - this.avgLife;
   // }
+
   yearsConversion(planets) {
-    let yearsOver = this.age - this.avgLife;
+    let lifeForce = this.age - this.avgLife;
     switch (planets) {
       case 'mars':
-        if (yearsOver > 0) {
-          return (yearsOver / 1.88);
+        if (lifeForce > 0) {
+          return (lifeForce / 1.88);
         } else {
-          return "You're still younger than the average!"
+          return (lifeForce / 1.88) * -1;
         }
       case 'mercury':
-        if (yearsOver > 0) {
-          return (yearsOver / .24);
+        if (lifeForce > 0) {
+          return (lifeForce / .24);
         } else {
-          return "You're still younger than the average, grow up!"
+          return (lifeForce / .24) * -1;
         }
       case 'venus':
-        if (yearsOver > 0) {
-          return (yearsOver / .64);
+        if (lifeForce > 0) {
+          return (lifeForce / .64);
         } else {
           return "You're still younger than the average, lil baby!"
         }
       case 'jupiter':
-        if (yearsOver > 0) {
-          return (yearsOver / 11.86);
+        if (lifeForce > 0) {
+          return (lifeForce / 11.86);
         } else {
           return "You're still younger than the average, grow up already!"
         }
@@ -73,22 +68,3 @@ export class Age {
   // }
   // yearsConversion("mars");
 }
-
-// const expr = 'Papayas';
-// switch (expr) {
-//   case 'Oranges':
-//     console.log('Oranges are $0.59 a pound.');
-//     break;
-//   case 'Mangoes':
-//   case 'Papayas':
-//     console.log('Mangoes and papayas are $2.79 a pound.');
-//     // expected output: "Mangoes and papayas are $2.79 a pound."
-//     break;
-//   default:
-//     console.log(`Sorry, we are out of ${expr}.`);
-// }
-  // marsLife() {
-  //   // let myMarsLife = this.mars.push(this.age * 1.88)
-  //   this.mars = 1.88 * this.age;
-  //   return this.mars;
-// }
