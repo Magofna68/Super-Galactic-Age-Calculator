@@ -1,11 +1,12 @@
 export class Age {
-  constructor(age, mars, life) {
+  constructor(age, life) {
     this.age = age;
-    this.mars = mars;
+    this.mars = [];
     this.life = life;
   }
 
-  marsLife(age) {
-    let myMarsLife = myAge.age * 1.88
+  marsLife() {
+    let myMarsLife = myAge.mars.push(this.age * 1.88)
+
   }
 }
