@@ -67,4 +67,9 @@ describe('Age', () => {
     expect(myAge.yearsConversion('mercury')).toBeDefined();
     console.log(myAge.yearsConversion('mercury'))
   })
+
+  test('should return the planetary calculations (venus) above the average life', () => {
+    expect(myAge.yearsConversion('venus')).toBeDefined();
+    console.log(myAge.yearsConversion('venus'))
+  })
 })
