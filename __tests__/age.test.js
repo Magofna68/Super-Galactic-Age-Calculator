@@ -3,7 +3,7 @@ import { Age } from '../src/age.js'
 describe('Age', () => {
   let myAge;
   beforeEach(() => {
-    myAge = new Age(10, 70)
+    myAge = new Age(80, 70)
   })
 
   test('Should properly create an object with Age constructor', () => {
@@ -38,7 +38,7 @@ describe('Age', () => {
     expect(myAge.jupiter).toEqual(118.6);
   })
 
-  test('should convert estimated remainder of life (RoL) into Marsian years', () => {
+  test('should convert estimated remainder of life (RoL) into Martian years', () => {
     expect(myAge.remainderMars).toEqual(31.914893617021278);
   })
 
@@ -54,11 +54,12 @@ describe('Age', () => {
     expect(myAge.remainderJupiter).toEqual(5.059021922428331);
   })
 
-  test('should return average age - user age', () => {
-    expect(myAge.beatenTheOdds).toBeDefined();
-  })
+  // test('should return average age - user age', () => {
+  //   expect(myAge.beatenTheOdds).toBeDefined();
+  // })
 
   test('should return the planetary years over the average life', () => {
-    expect(myAge.yearsConversion).toBeDefined();
+    expect(myAge.yearsConversion('mars')).toBeDefined();
+    console.log(myAge.yearsConversion('mars'))
   })
 })

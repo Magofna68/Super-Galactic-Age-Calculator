@@ -12,34 +12,65 @@ export class Age {
     this.remainderJupiter = (this.avgLife - this.age) / 11.86;
   }
 
-  beatenTheOdds() {
-    if (this.avgLife >= this.age) {
-      return "You have life in you still!"
-    } else {
-      let yearsOver = this.age - this.avgLife;
-      console.log(yearsOver);
-    }
-    return yearsOver;
-  }
+  // beatenTheOdds() {
+  //   if (this.avgLife >= this.age) {
+  //     return "You have life in you still!"
+  //   } else {
+  //     let yearsOver = this.age - this.avgLife;
 
+  //   return yearsOver;
+  // }
   yearsConversion(planets) {
-    // const planets = '';
-    yearsOver = this.age - this.avgLife;
+    let yearsOver = this.age - this.avgLife;
     switch (planets) {
       case 'mars':
-        (yearsOver / 1.88);
-        break;
+        if (yearsOver > 0) {
+          return (yearsOver / 1.88);
+        } else {
+          return "You're still younger than the average!"
+        }
       case 'mercury':
-        (yearsOver / .24);
-        break;
+        if (yearsOver > 0) {
+          return (yearsOver / .24);
+        } else {
+          return "You're still younger than the average!"
+        }
       case 'venus':
-        (yearsOver / .64);
-        break;
+        if (yearsOver > 0) {
+          return (yearsOver / .64);
+        } else {
+          return "You're still younger than the average!"
+        }
       case 'jupiter':
-        (yearsOver / 11.86);
-        break;
+        if (yearsOver > 0) {
+          return (yearsOver / 11.86);
+        } else {
+          return "You're still younger than the average!"
+        }
+      default: 'Sorry, we didnt get that. Please make sure ${planets} has been spelled correctly using lowercase lettering.'
     }
   }
+
+  // yearsConversion(planets) {
+  //   // const planets = '';
+  // let yearsOver = this.age - this.avgLife;
+  //     switch (planets) {
+  //       case 'mars':
+  //         (yearsOver / 1.88);
+  //         break;
+  //       case 'mercury':
+  //         (yearsOver / .24);
+  //         break;
+  //       case 'venus':
+  //         (yearsOver / .64);
+  //         break;
+  //       case 'jupiter':
+  //         (yearsOver / 11.86);
+  //         break;
+  //       default: 'Sorry, we didnt get that. Please make sure ${planets} has been spelled correctly using lowercase lettering.'
+  //     }
+  //   }
+  // }
   // yearsConversion("mars");
 }
 
