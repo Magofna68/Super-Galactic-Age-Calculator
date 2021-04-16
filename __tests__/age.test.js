@@ -3,7 +3,7 @@ import { Age } from '../src/age.js'
 describe('Age', () => {
   let myAge;
   beforeEach(() => {
-    myAge = new Age(80, 70)
+    myAge = new Age(70, 70)
   })
 
   test('Should properly create an object with Age constructor', () => {
@@ -71,5 +71,10 @@ describe('Age', () => {
   test('should return the planetary calculations (venus) above the average life', () => {
     expect(myAge.yearsConversion('venus')).toBeDefined();
     console.log(myAge.yearsConversion('venus'))
+  })
+
+  test('should return the planetary calculations (venus) above the average life', () => {
+    expect(myAge.yearsConversion('jupiter')).toBeDefined();
+    console.log(myAge.yearsConversion('jupiter'))
   })
 })
