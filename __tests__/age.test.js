@@ -7,9 +7,10 @@ describe('Age', () => {
   })
 
   test('Should properly create an object with Age constructor', () => {
-    // const myAge = new Age()
     expect(myAge).toBeDefined();
   })
 
-
+  test('Should properly create an object with a property', () => {
+    expect(myAge.age).toBeDefined();
+  })
 })
