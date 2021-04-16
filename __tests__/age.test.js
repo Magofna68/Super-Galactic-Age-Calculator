@@ -55,7 +55,10 @@ describe('Age', () => {
   })
 
   test('should return average age - user age', () => {
-    myAge.beatenTheOdds();
-    expect(longLived).toBeDefined();
+    expect(myAge.beatenTheOdds).toBeDefined();
+  })
+
+  test('should return the planetary years over the average life', () => {
+    expect(myAge.yearsConversion).toBeDefined();
   })
 })
