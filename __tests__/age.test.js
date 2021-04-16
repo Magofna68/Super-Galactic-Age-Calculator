@@ -38,57 +38,60 @@ describe('Age', () => {
     expect(myAge.jupiter).toEqual(118.6);
   })
 
-  test('should convert estimated remainder of life (RoL) into Martian years', () => {
-    expect(myAge.remainderMars).toEqual(31.914893617021278);
-  })
-
-  test('should convert estimated RoL into mercury years', () => {
-    expect(myAge.remainderMercury).toEqual(250);
-  })
-
-  test('should convert estimated RoL into venus years', () => {
-    expect(myAge.remainderVenus).toEqual(96.7741935483871);
-  })
-
-  test('should convert estimated RoL into jupiter years', () => {
-    expect(myAge.remainderJupiter).toEqual(5.059021922428331);
-  })
-
-  // test('should return average age - user age', () => {
-  //   expect(myAge.beatenTheOdds).toBeDefined();
-  // })
-
-  test('should return the planetary calculations (mars) above the average life', () => {
-    expect(myAge.yearsConversion('mars')).toBeDefined();
-    console.log(myAge.yearsConversion('mars'))
-  })
-
-  test('should return the planetary calculations (mercury) above the average life', () => {
-    expect(myAge.yearsConversion('mercury')).toBeDefined();
-  })
-
-  test('should return the planetary calculations (venus) above the average life', () => {
-    expect(myAge.yearsConversion('venus')).toBeDefined();
-  })
-
-  test('should return the planetary calculations (venus) above the average life', () => {
-    expect(myAge.yearsConversion('jupiter')).toBeDefined();
-  })
-
-  test('should refactor the switch statement to include life left in martian planetary years', () => {
-    expect(myAge.yearsConversion('mars')).toBeDefined();
-    // console.log(myAge.yearsConversion('mars')).toBeDefined()
-  })
-
-  test('should refactor the switch statement to include "life remaining" in mercury years', () => {
-    expect(myAge.yearsConversion('mercury')).toEqual(83.33333333333334);
-  })
-
-  test('should refactor the switch statement to include "life remaining" in venus years', () => {
-    expect(myAge.yearsConversion('venus')).toEqual(31.25);
-  })
-
-  test('should refactor the switch statement to include "life remaining" in jupiter years', () => {
-    expect(myAge.yearsConversion('jupiter')).toEqual(1.6863406408094437);
+  test('implement a switch statement to return the age of an ind in martian years', () => {
+    expect(myAge.ageConversion('mars')).toEqual();
+    console.log(myAge.ageConversion('mars'));
   })
 })
+// test('should convert estimated remainder of life (RoL) into Martian years', () => {
+//   expect(myAge.remainderMars).toEqual(31.914893617021278);
+// })
+
+// test('should convert estimated RoL into mercury years', () => {
+//   expect(myAge.remainderMercury).toEqual(250);
+// })
+
+// test('should convert estimated RoL into venus years', () => {
+//   expect(myAge.remainderVenus).toEqual(96.7741935483871);
+// })
+
+// test('should convert estimated RoL into jupiter years', () => {
+//   expect(myAge.remainderJupiter).toEqual(5.059021922428331);
+// })
+
+
+// --------------------------------------------------------------------------------------------------
+//   test('should return the planetary calculations (mars) above the average life', () => {
+//     expect(myAge.lifeForceConversion('mars')).toBeDefined();
+//     console.log(myAge.lifeForceConversion('mars'))
+//   })
+
+//   test('should return the planetary calculations (mercury) above the average life', () => {
+//     expect(myAge.lifeForceConversion('mercury')).toBeDefined();
+//   })
+
+//   test('should return the planetary calculations (venus) above the average life', () => {
+//     expect(myAge.lifeForceConversion('venus')).toBeDefined();
+//   })
+
+//   test('should return the planetary calculations (venus) above the average life', () => {
+//     expect(myAge.lifeForceConversion('jupiter')).toBeDefined();
+//   })
+
+//   test('should refactor the switch statement to include life left in martian planetary years', () => {
+//     expect(myAge.lifeForceConversion('mars')).toBeDefined();
+//     // console.log(myAge.yearsConversion('mars')).toBeDefined()
+//   })
+
+//   test('should refactor the switch statement to include "life remaining" in mercury years', () => {
+//     expect(myAge.lifeForceConversion('mercury')).toEqual(83.33333333333334);
+//   })
+
+//   test('should refactor the switch statement to include "life remaining" in venus years', () => {
+//     expect(myAge.lifeForceConversion('venus')).toEqual(31.25);
+//   })
+
+//   test('should refactor the switch statement to include "life remaining" in jupiter years', () => {
+//     expect(myAge.lifeForceConversion('jupiter')).toEqual(1.6863406408094437);
+//   })
+// })

@@ -6,16 +6,30 @@ export class Age {
     this.mercury = .24 * this.age;
     this.venus = .62 * this.age;
     this.jupiter = 11.86 * this.age;
-    this.remainderMars = (this.avgLife - this.age) / 1.88;
-    this.remainderMercury = (this.avgLife - this.age) / .24;
-    this.remainderVenus = (this.avgLife - this.age) / .62;
-    this.remainderJupiter = (this.avgLife - this.age) / 11.86;
+    // this.remainderMars = (this.avgLife - this.age) / 1.88;
+    // this.remainderMercury = (this.avgLife - this.age) / .24;
+    // this.remainderVenus = (this.avgLife - this.age) / .62;
+    // this.remainderJupiter = (this.avgLife - this.age) / 11.86;
   }
   // yearsMars(planets) {
   //   let lifeForce = this.age - this.avgLife;
   // }
 
-  yearsConversion(planets) {
+  ageConversion(planets) {
+    switch (planets) {
+      case 'mars': (1.88 / this.age);
+        break;
+      case 'mercury': (.24 / this.age);
+        break;
+      case 'venus': (.62 / this.age);
+        break;
+      case 'jupiter': (11.86 / this.age);
+        break;
+      default: "Sorry we didnt quite get that. Please try again."
+    }
+  }
+
+  lifeForceConversion(planets) {
     let lifeForce = this.age - this.avgLife;
     switch (planets) {
       case 'mars':
