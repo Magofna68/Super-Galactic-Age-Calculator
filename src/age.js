@@ -33,19 +33,19 @@ export class Age {
         if (yearsOver > 0) {
           return (yearsOver / .24);
         } else {
-          return "You're still younger than the average!"
+          return "You're still younger than the average, grow up!"
         }
       case 'venus':
         if (yearsOver > 0) {
           return (yearsOver / .64);
         } else {
-          return "You're still younger than the average!"
+          return "You're still younger than the average, lil baby!"
         }
       case 'jupiter':
         if (yearsOver > 0) {
           return (yearsOver / 11.86);
         } else {
-          return "You're still younger than the average!"
+          return "You're still younger than the average, grow up already!"
         }
       default: 'Sorry, we didnt get that. Please make sure ${planets} has been spelled correctly using lowercase lettering.'
     }

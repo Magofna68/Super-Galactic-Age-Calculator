@@ -58,8 +58,13 @@ describe('Age', () => {
   //   expect(myAge.beatenTheOdds).toBeDefined();
   // })
 
-  test('should return the planetary years over the average life', () => {
+  test('should return the planetary calculations (mars) above the average life', () => {
     expect(myAge.yearsConversion('mars')).toBeDefined();
     console.log(myAge.yearsConversion('mars'))
+  })
+
+  test('should return the planetary calculations (mercury) above the average life', () => {
+    expect(myAge.yearsConversion('mercury')).toBeDefined();
+    console.log(myAge.yearsConversion('mercury'))
   })
 })
