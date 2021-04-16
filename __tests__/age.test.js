@@ -14,8 +14,8 @@ describe('Age', () => {
     expect(myAge.age).toBeDefined();
   })
 
-  test('Should properly create an object with a life property', () => {
-    expect(myAge.life).toBeDefined();
+  test('Should properly create an object with an average life property', () => {
+    expect(myAge.avgLife).toBeDefined();
   })
 
   test('Should properly create a mars property', () => {
@@ -52,5 +52,10 @@ describe('Age', () => {
 
   test('should convert estimated RoL into jupiter years', () => {
     expect(myAge.remainderJupiter).toEqual(5.059021922428331);
+  })
+
+  test('should return average age - user age', () => {
+    myAge.beatenTheOdds();
+    expect(longLived).toBeDefined();
   })
 })
