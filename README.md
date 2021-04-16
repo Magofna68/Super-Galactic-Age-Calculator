@@ -1,11 +1,12 @@
-# PROJECT NAME
+# Super Galactic Age Calculator
 ## By Brandon Magofna
 
 ---
 
 ### Project Description
 
-This project is a web application that DESCRIPTION
+This project is a web application that can take in a users age, and output their age in terms of unique planetary years for the following: mars, mercury, jupiter, venus.
+It will also calculate the life remaining based on your age and an average life expectancy of 70 earth years. If you're over 70, it will return the amount of planetary years you're over the average.
 ---
 ### Tech Stack
 1. HTML5+CSS3
@@ -24,7 +25,7 @@ This project is a web application that DESCRIPTION
 
 ---
 ### Installation Instructions
-1. Clone this repo: `git clone https://github.com/Magofna68/REPO URL`
+1. Clone this repo: `git clone https://github.com/Magofna68/Super-Galactic-Age-Calculator`
 2. Enter new directory `cd REPO DIR`
 3. Install dependencies with `npm install`
 4. To run it locally, use the npm dev command `npm run start:dev`
@@ -37,10 +38,8 @@ This project is a web application that DESCRIPTION
 ---
 ### Test Suite/Specification
 
-> See also [the Jest Test File](TESTSURL) for Jest Test Suite which includes 14 passing tests. View Test Results from Project Directory by Running `yarn run test` or if you prefer npm `npm run test`
-
 ```
-Describe: TESTS
+Describe: Using Jest, will test for thorough functionality of project.
 
 ```
 ---

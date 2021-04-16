@@ -38,9 +38,9 @@ describe('Age', () => {
     expect(myAge.jupiter).toEqual(118.6);
   })
 
-  test('implement a switch statement to return the age of an ind in martian years', () => {
-    expect(myAge.ageConversion('mars')).toEqual();
-    console.log(myAge.ageConversion('mars'));
+  test('implement a switch statement to return the age of an ind in mercury years', () => {
+    myAge.ageConversion('mars');
+    expect(myAge.ageConversion('mars')).toEqual(26.595);
   })
 })
 // test('should convert estimated remainder of life (RoL) into Martian years', () => {
