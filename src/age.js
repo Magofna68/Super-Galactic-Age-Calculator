@@ -55,7 +55,7 @@ export default class Age {
         } else {
           return (lifeForce / 11.86);
         }
-      default: 'Sorry, we didnt get that. Please make sure ${planets} has been spelled correctly using lowercase lettering.'
+      default: ('Sorry, we didnt get that. Please make sure the word has been spelled correctly using lowercase lettering.');
     }
   }
 }

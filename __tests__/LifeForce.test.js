@@ -67,4 +67,9 @@ describe('lifeForceConversion', () => {
     myAge = new Age(90, 70)
     expect(myAge.lifeForceConversion('jupiter')).toEqual(1.6863406408094437);
   })
+
+  test('should return a sentence prompting the user to accurately type in correct planet in lowercase letters', () => {
+    myAge = new Age(90, 70)
+    expect(myAge.lifeForceConversion('orange')).toBeUndefined();
+  })
 })
