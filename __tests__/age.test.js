@@ -64,7 +64,6 @@ describe('Age', () => {
 
   test('should return the planetary calculations (mars) above the average life', () => {
     expect(myAge.lifeForceConversion('mars')).toBeDefined();
-    console.log(myAge.lifeForceConversion('mars'))
   })
 
   test('should return the planetary calculations (mercury) above the average life', () => {
@@ -84,7 +83,7 @@ describe('Age', () => {
   })
 
   test('should refactor the switch statement to include "life remaining" in mercury years', () => {
-    expect(myAge.lifeForceConversion('mercury')).toEqual(79.166);
+    expect(myAge.lifeForceConversion('mercury')).toEqual(79.16666666666667);
   })
 
   test('should refactor the switch statement to include "life remaining" in venus years', () => {
@@ -92,11 +91,11 @@ describe('Age', () => {
   })
 
   test('should refactor the switch statement to include "life remaining" in jupiter years', () => {
-    expect(myAge.lifeForceConversion('jupiter')).toEqual(1.602);
+    expect(myAge.lifeForceConversion('jupiter')).toEqual(1.6020236087689714);
   })
 
   test('should return remainder of life in planetary years for Mars', () => {
-    expect(myAge.lifeForceConversion('mars')).toEqual(10.638297872340425);
+    expect(myAge.lifeForceConversion('mars')).toEqual(10.106382978723405);
   })
 
   test('should return how much older the individual is over the planetary average for Mars', () => {

@@ -45,9 +45,9 @@ export default class Age {
         }
       case 'venus':
         if (lifeForce < 0) {
-          return (lifeForce / .64) * -1;
+          return (lifeForce / .62) * -1;
         } else {
-          return (lifeForce / .64);
+          return (lifeForce / .62);
         }
       case 'jupiter':
         if (lifeForce < 0) {
