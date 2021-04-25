@@ -47,19 +47,19 @@ describe('Age', () => {
 
 
   test('should convert estimated remainder of life (RoL) into Martian years', () => {
-    expect(myAge.remainderMars).toEqual(31.914893617021278);
+    expect(myAge.remainderMars).toEqual(10.6);
   })
 
   test('should convert estimated RoL into mercury years', () => {
-    expect(myAge.remainderMercury).toEqual(250);
+    expect(myAge.remainderMercury).toEqual(83.33);
   })
 
   test('should convert estimated RoL into venus years', () => {
-    expect(myAge.remainderVenus).toEqual(96.7741935483871);
+    expect(myAge.remainderVenus).toEqual(32.25);
   })
 
   test('should convert estimated RoL into jupiter years', () => {
-    expect(myAge.remainderJupiter).toEqual(5.059021922428331);
+    expect(myAge.remainderJupiter).toEqual(1.68);
   })
 
   test('should return the planetary calculations (mars) above the average life', () => {
