@@ -2,10 +2,10 @@ export default class Age {
   constructor(age, avgLife) {
     this.age = age;
     this.avgLife = avgLife;
-    this.mars = 1.88 * this.age;
+    this.mars = this.age / 1.88;
     this.mercury = this.age / 0.24;
     this.venus = this.age / .62;
-    this.jupiter = 11.86 * this.age;
+    this.jupiter = this.age / 11.86;
     this.remainderMars = (this.avgLife - this.age) / 1.88;
     this.remainderMercury = (this.avgLife - this.age) / .24;
     this.remainderVenus = (this.avgLife - this.age) / .62;
