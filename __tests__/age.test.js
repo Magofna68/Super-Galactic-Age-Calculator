@@ -23,7 +23,7 @@ describe('Age', () => {
   })
 
   test('Should properly take in a value and convert value to mars years', () => {
-    expect(myAge.mars).toEqual(94)
+    expect(myAge.mars).toEqual(26.595744680851066)
   })
 
   test('Should convert earth years into mercury years', () => {
@@ -31,11 +31,11 @@ describe('Age', () => {
   })
 
   test('should convert earth years into venus years', () => {
-    expect(myAge.venus).toEqual(6.2);
+    expect(myAge.venus).toEqual(80.64516129032258);
   })
 
   test('should convert earth years into jupiter years', () => {
-    expect(myAge.jupiter).toEqual(118.6);
+    expect(myAge.jupiter).toEqual(4.2158516020236085);
   })
 
   // // _______________________________________________
