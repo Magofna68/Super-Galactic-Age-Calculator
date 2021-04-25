@@ -84,15 +84,15 @@ describe('Age', () => {
   })
 
   test('should refactor the switch statement to include "life remaining" in mercury years', () => {
-    expect(myAge.lifeForceConversion('mercury')).toEqual(83.33333333333334);
+    expect(myAge.lifeForceConversion('mercury')).toEqual(79.166);
   })
 
   test('should refactor the switch statement to include "life remaining" in venus years', () => {
-    expect(myAge.lifeForceConversion('venus')).toEqual(31.25);
+    expect(myAge.lifeForceConversion('venus')).toEqual(30.645);
   })
 
   test('should refactor the switch statement to include "life remaining" in jupiter years', () => {
-    expect(myAge.lifeForceConversion('jupiter')).toEqual(1.6863406408094437);
+    expect(myAge.lifeForceConversion('jupiter')).toEqual(1.602);
   })
 
   test('should return remainder of life in planetary years for Mars', () => {
