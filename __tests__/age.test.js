@@ -3,7 +3,7 @@ import Age from '../src/age.js'
 describe('Age', () => {
   let myAge;
   beforeEach(() => {
-    myAge = new Age(95, 70)
+    myAge = new Age(51, 70)
   })
 
   test('Should properly create an object with Age constructor', () => {
@@ -23,19 +23,19 @@ describe('Age', () => {
   })
 
   test('Should properly take in a value and convert value to mars years', () => {
-    expect(myAge.mars).toEqual(26.595744680851066)
+    expect(myAge.mars).toEqual(27.1276596)
   })
 
   test('Should convert earth years into mercury years', () => {
-    expect(myAge.mercury).toEqual(208.33333333333334);
+    expect(myAge.mercury).toEqual(212.5);
   })
 
   test('should convert earth years into venus years', () => {
-    expect(myAge.venus).toEqual(80.64516129032258);
+    expect(myAge.venus).toEqual(82.2580645);
   })
 
   test('should convert earth years into jupiter years', () => {
-    expect(myAge.jupiter).toEqual(4.2158516020236085);
+    expect(myAge.jupiter).toEqual(4.30016863);
   })
 
   // // _______________________________________________
