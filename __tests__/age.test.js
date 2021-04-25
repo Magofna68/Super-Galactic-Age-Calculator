@@ -81,7 +81,6 @@ describe('Age', () => {
 
   test('should refactor the switch statement to include life left in martian planetary years', () => {
     expect(myAge.lifeForceConversion('mars')).toBeDefined();
-    // console.log(myAge.yearsConversion('mars')).toBeDefined()
   })
 
   test('should refactor the switch statement to include "life remaining" in mercury years', () => {
@@ -95,4 +94,6 @@ describe('Age', () => {
   test('should refactor the switch statement to include "life remaining" in jupiter years', () => {
     expect(myAge.lifeForceConversion('jupiter')).toEqual(1.6863406408094437);
   })
+
+  test('should return')
 })

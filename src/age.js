@@ -32,28 +32,28 @@ export default class Age {
     let lifeForce = this.age - this.avgLife;
     switch (planets) {
       case 'mars':
-        if (lifeForce > 0) {
-          return (lifeForce / 1.88);
-        } else {
+        if (lifeForce < 0) {
           return (lifeForce / 1.88) * -1;
+        } else {
+          return (lifeForce / 1.88);
         }
       case 'mercury':
-        if (lifeForce > 0) {
-          return (lifeForce / .24);
-        } else {
+        if (lifeForce < 0) {
           return (lifeForce / .24) * -1;
+        } else {
+          return (lifeForce / .24);
         }
       case 'venus':
-        if (lifeForce > 0) {
-          return (lifeForce / .64);
-        } else {
+        if (lifeForce < 0) {
           return (lifeForce / .64) * -1;
+        } else {
+          return (lifeForce / .64);
         }
       case 'jupiter':
-        if (lifeForce > 0) {
-          return (lifeForce / 11.86);
+        if (lifeForce < 0) {
+          return (lifeForce / 11.86) * -1
         } else {
-          return (lifeForce / 11.86) * -1;
+          return (lifeForce / 11.86);
         }
       default: 'Sorry, we didnt get that. Please make sure ${planets} has been spelled correctly using lowercase lettering.'
     }
