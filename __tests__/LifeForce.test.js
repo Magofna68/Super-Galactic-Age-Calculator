@@ -50,6 +50,16 @@ describe('lifeForceConversion', () => {
 
   test('should return a value reflecting how much older the individual is over the planetary average; Mars', () => {
     myAge = new Age(90, 70)
-    expect(myAge.lifeForceConversion('mars')).toEqual(10.638);
+    expect(myAge.lifeForceConversion('mars')).toEqual(10.638297872340425);
+  })
+
+  test('should return a value reflecting how much older the individual is over the planetary average; mercury', () => {
+    myAge = new Age(90, 70)
+    expect(myAge.lifeForceConversion('mercury')).toEqual(83.333);
+  })
+
+  test('should return a value reflecting how much older the individual is over the planetary average; venus', () => {
+    myAge = new Age(90, 70)
+    expect(myAge.lifeForceConversion('venus')).toEqual(83.333);
   })
 })
