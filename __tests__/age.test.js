@@ -38,14 +38,6 @@ describe('Age', () => {
     expect(myAge.jupiter).toEqual(4.3001686340640815);
   })
 
-  // // _______________________________________________
-  //   // test('implement a switch statement to return the age of an ind in mercury years', () => {
-  //   //   myAge.ageConversion('mars');
-  //   //   expect(myAge.ageConversion('mars')).toBeDefined();
-  //   // })
-  // //---------------------------------------------------
-
-
   test('should convert estimated remainder of life (RoL) into Martian years', () => {
     expect(myAge.remainderMars).toEqual(10.106382978723405);
   })
@@ -62,43 +54,3 @@ describe('Age', () => {
     expect(myAge.remainderJupiter).toEqual(1.6020236087689714);
   })
 })
-//   test('should return the planetary calculations (mars) above the average life', () => {
-//     expect(myAge.lifeForceConversion('mars')).toBeDefined();
-//   })
-
-//   test('should return the planetary calculations (mercury) above the average life', () => {
-//     expect(myAge.lifeForceConversion('mercury')).toBeDefined();
-//   })
-
-//   test('should return the planetary calculations (venus) above the average life', () => {
-//     expect(myAge.lifeForceConversion('venus')).toBeDefined();
-//   })
-
-//   test('should return the planetary calculations (venus) above the average life', () => {
-//     expect(myAge.lifeForceConversion('jupiter')).toBeDefined();
-//   })
-
-//   test('should refactor the switch statement to include life left in martian planetary years', () => {
-//     expect(myAge.lifeForceConversion('mars')).toBeDefined();
-//   })
-
-//   test('should refactor the switch statement to include "life remaining" in mercury years', () => {
-//     expect(myAge.lifeForceConversion('mercury')).toEqual(79.16666666666667);
-//   })
-
-//   test('should refactor the switch statement to include "life remaining" in venus years', () => {
-//     expect(myAge.lifeForceConversion('venus')).toEqual(30.64516129032258);
-//   })
-
-//   test('should refactor the switch statement to include "life remaining" in jupiter years', () => {
-//     expect(myAge.lifeForceConversion('jupiter')).toEqual(1.6020236087689714);
-//   })
-
-//   test('should return remainder of life in planetary years for Mars', () => {
-//     expect(myAge.lifeForceConversion('mars')).toEqual(10.106382978723405);
-//   })
-
-//   test('should return a value reflecting how much older the individual is over the planetary average; Mars', () => {
-//     expect(myAge.lifeForceConversion('mars')).toBeDefined();
-//   })
-// })

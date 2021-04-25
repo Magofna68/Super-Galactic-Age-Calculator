@@ -12,22 +12,6 @@ export default class Age {
     this.remainderJupiter = (this.avgLife - this.age) / 11.86;
   }
 
-  // ageConversion(planets); {
-  //   let age = this.age;
-  //   switch (planets) {
-  //     case 'mars':
-  //       return (age / 1.88);
-  //     case 'mercury': (this.age / .24);
-  //       break;
-  //     case 'venus': (this.age / .62);
-  //       break;
-  //     case 'jupiter': (this.age / 11.86);
-  //       break;
-  //     default: "Sorry we didnt quite get that. Please try again."
-  //   }
-  // }
-
-
   lifeForceConversion(planets) {
     let lifeForce = this.age - this.avgLife;
     switch (planets) {
